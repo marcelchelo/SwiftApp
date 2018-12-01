@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.yellow
         
        
-        textField.text = "Yellow was pressed " ; yellow_count.t
+        textField.text = "Yellow was pressed " ;
         
     }
     
