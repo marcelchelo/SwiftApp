@@ -18,43 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAH-9p-Jvz">
-                                <rect key="frame" x="49" y="218" width="85" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="RED"/>
-                                <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBF-1i-UMu"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text appears here " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yr9-oe-cLA" userLabel="textBox">
-                                <rect key="frame" x="49" y="69" width="289" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text appears here " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yr9-oe-cLA" userLabel="textBox">
+                                <rect key="frame" x="117" y="120" width="141" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHF-zF-o2c">
-                                <rect key="frame" x="165" y="237" width="44" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CxQ-Mz-FFb">
+                                <rect key="frame" x="137.5" y="207" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="STz-Eh-Upt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHF-zF-o2c">
+                                <rect key="frame" x="165.5" y="292" width="44" height="30"/>
                                 <state key="normal" title="Yellow"/>
                                 <connections>
                                     <action selector="buttonYellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xEp-t5-zBJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzP-HX-gge" userLabel="Blue">
-                                <rect key="frame" x="266" y="237" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="blue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4p-Hv-gLx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MHF-zF-o2c" firstAttribute="top" secondItem="yr9-oe-cLA" secondAttribute="bottom" constant="142" id="3Q0-da-xiG"/>
+                            <constraint firstItem="CxQ-Mz-FFb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PQW-GL-LdX"/>
+                            <constraint firstItem="MHF-zF-o2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zqt-ay-1Lz"/>
+                            <constraint firstItem="yr9-oe-cLA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b3a-m2-OCv"/>
+                            <constraint firstItem="CxQ-Mz-FFb" firstAttribute="top" secondItem="yr9-oe-cLA" secondAttribute="bottom" constant="57" id="ejZ-oF-OfW"/>
+                            <constraint firstItem="yr9-oe-cLA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="wFa-Cr-XSf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="yr9-oe-cLA" id="fSC-WK-FNC"/>
+                        <outlet property="text1" destination="CxQ-Mz-FFb" id="TR7-cg-GWH"/>
+                        <outlet property="textField" destination="yr9-oe-cLA" id="lTC-Vl-9lz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

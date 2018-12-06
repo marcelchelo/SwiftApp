@@ -10,39 +10,41 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //this is the text field
-    @IBOutlet weak var textField: UITextField!
     
         var yellow_count = 0 ;
+   
+    
+    
+    
     //the yellow button
     @IBAction func buttonYellow(_ sender: Any) {
         
+        print(textField)
+        print(textField.text!)
+        print(text1.text!)
         yellow_count = yellow_count + 1
         self.view.backgroundColor = UIColor.yellow
         
+        textField.text = "Yellow was pressed"
        
-        textField.text = "Yellow was pressed " ;
-        
-    }
-    
-    //blue
-    @IBAction func blue(_ sender: Any) {
-           self.view.backgroundColor = UIColor.blue
-        textField.text = "Blue was pressed"
+       
         
     }
     
     
+    //this is the text field
+    @IBOutlet weak var textField: UITextField!
+    //second text field
+    @IBOutlet weak var text1: UITextField!
     
-    //button red
-    @IBAction func buttonTapped(_ sender: Any) {
-        self.view.backgroundColor = UIColor.red
-         textField.text = "RED was pressed"
-        
-        
-        
-        
-    }
+    
+    
+    
+   
+    
+    
+    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
